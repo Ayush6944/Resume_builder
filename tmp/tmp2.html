@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tmp2</title>
+    <link rel="stylesheet" href="tmp2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="tmp2.js"></script>
+    <script src='https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js'></script>
+    <script src="downlaod.js"></script>
+    <link rel="stylesheet" href="button.css">
+    <script src="button.js"></script>
+</head>
+<body >
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<div id="parent">
+<button onclick="download()" id="button">Download _ PDF</button>
+<div id="look">      
+  
+
+<div class="container">
+  <div class="header">
+    <div class="full-name">
+      <span class="first-name" name="first-name">ayush</span> 
+      <span class="last-name" name="last-name"><b>Doe</b></span>
+    </div>
+    <div class="contact-info">
+      <span class="email">Email: </span>
+      <span class="email-val">john.doe@gmail.com</span>
+      <span class="separator"></span>
+      <span class="phone">Phone: </span>
+      <span class="phone-val">111-222-3333</span>
+    </div>
+    <!-- <i class="fa-brands fa-linkedin"></i> -->
+    <div class="about">
+      <!-- <i class="fa-brands fa-linkedin"></i> -->
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      <span>-</span>
+      <span class="linkedin">::-linkedin_id </span>
+      <br>
+      <br>
+      
+
+      
+      <span class="position">Front-End Developer </span>
+      <span class="desc">
+        I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow. 
+      </span>
+    </div>
+  </div>
+   <div class="details">
+    <div class="section">
+      <div class="section__title">Experience</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name c1" id="c1">KlowdBox</div>
+            <div class="addr" id="c1addre">San Fr, CA</div>
+            <div class="duration "id="c1dur">Jan 2011 - Feb 2015</div>
+          </div>
+          <!-- <div class="right">
+            <div class="name">Fr developer</div>
+            <div class="desc">did This and that</div>
+          </div> -->
+        </div>
+                <div class="section__list-item">
+          <div class="left">
+            <div class="name2"><b>Akount</b></div>
+            <div class="addr2">San Monica, CA</div>
+            <div class="duration2">Jan 2011 - Feb 2015</div>
+          </div>
+          <!-- <div class="right">
+            <div class="name">Fr developer</div>
+            <div class="desc">did This and that</div>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Education</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name" id="class10">Sample Institute of technology</div>
+            <div class="addr" id="10addr2">San CA</div>
+            <div id="duration" id="10dur">Jan 2011 - Feb 2015</div>
+          </div>
+          <div class="right">
+            <div class="name">Score</div>
+            <div class="desc" id="10score">100%</div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name" id="12">Akount</div>
+            <div class="addr" id="12addr">San Monica, CA</div>
+            <div class="duration" id="12dur">Jan 2011 - Feb 2015</div>
+          </div>
+          <div class="right">
+            <div class="name">Score</div>
+            <div class="desc" id="12score">100%</div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name" id="ug">iec</div>
+            <div class="addr" id="ugadd">San Monica, CA</div>
+            <div class="addr" id="ugstream">San Monica, CA</div>
+            <!-- <div class="addr">San Monica, CA</div> -->
+            <div class="ugdur">Jan 2011 - Feb 2015</div>
+          </div>
+          <div class="right">
+            <div class="name">Score</div>
+            <div class="desc" id="ugscore">120cgpa</div>
+          </div>
+        </div>
+
+      </div>
+      
+  </div>
+     <div class="section">
+      <div class="section__title">Projects</div> 
+       <div class="section__list">
+         <div class="section__list-item">
+           <div class="name">DSP</div>
+           <div class="text">I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.</div>
+         </div>
+         
+         <div class="section__list-item">
+                    <div class="name">DSP</div>
+           <div class="text">I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow. <a href="/login">link</a>
+           </div>
+         </div>
+       </div>
+    </div>
+     <div class="section">
+       <div class="section__title">Skills</div>
+       <div class="skills">
+         <div class="skills__item">
+           <div class="left"><div class="name">
+             Javascript
+             </div></div>
+           <div class="right">
+                          <input  id="ck1" type="checkbox" checked/>
+
+             <label for="ck1"></label>
+                          <input id="ck2" type="checkbox" checked/>
+
+              <label for="ck2"></label>
+                         <input id="ck3" type="checkbox" />
+
+              <label for="ck3"></label>
+                           <input id="ck4" type="checkbox" />
+            <label for="ck4"></label>
+                          <input id="ck5" type="checkbox" />
+              <label for="ck5"></label>
+
+           </div>
+         </div>
+         
+       </div>
+       <div class="skills__item">
+           <div class="left"><div class="name">
+             CSS</div></div>
+           <div class="right">
+                          <input  id="ck1" type="checkbox" checked/>
+
+             <label for="ck1"></label>
+                          <input id="ck2" type="checkbox" checked/>
+
+              <label for="ck2"></label>
+                         <input id="ck3" type="checkbox" />
+
+              <label for="ck3"></label>
+                           <input id="ck4" type="checkbox" />
+            <label for="ck4"></label>
+                          <input id="ck5" type="checkbox" />
+              <label for="ck5"></label>
+
+           </div>
+         </div>
+         
+       </div>
+     <div class="section">
+     <div class="section__title">
+       Interests
+       </div>
+       <div class="section__list">
+         <div class="section__list-item">
+                  Football, programming.
+          </div>
+       </div>
+     </div>
+
+     
+     </div>
+  </div>
+</div>
+
+<div id="from" class="scroll">
+   
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    form {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+
+<form action="#" method="post" scroll="active" onkeypress="updatelName()">
+
+  <label for="name">First-Name:</label>
+  <input type="text" name="first-name" value="aysuh" id="fname" required oninput="updatefName()">
+  <label for="name">Last-Name:</label>
+  <input type="text" name="last-Name" value="DOE" id="lname" required oninput="updatelName()">
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" value="ayush@gmial.com" id="email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" name="phone" id="phone" value="6386063" required>
+
+  <label for="linkedin">LinkedIn:</label>
+  <input type="url" name="linkedin" value="ayush_linkedin.com" id="linkedin">
+
+  <!-- <label for="github">GitHub:</label>
+  <input type="url" name="github" id="github"> -->
+   
+  <label for="position">position</label>
+  <input type="text" name="position" value="Software Developer" placeholder="front-end" id="position" required>
+  <label for="position-desc">Description</label>
+  <!-- <input type="text" name="position" placeholder="front-end" id="positiin" required> -->
+  <input name="summary" id="postion-desc" value="I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow" rows="5" cols="50" placeholder=" I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, ">
+
+  <!-- <label for="position">position</label>
+  <input type="text" name="position" placeholder="front-end" id="positiin" required> -->
+<!-- company name  -->
+  <label for="company-name">Experiances.......</label>
+  <label for="company-name">company name-1</label>
+  <input type="text" value="Microsoft" name="company-name" placeholder="company-1" id="copmany-name-1" required>
+ 
+  <label for="add">Address</label>
+  <input type="text" value="Noida" name="position" placeholder="Address of company" id="addc1" required>
+
+  <label for="duration">Duration</label>
+  <input type="text" value="2Years" name="position" placeholder="Duration in company" id="durationc1" required>
+ 
+  <label for="company-name">company name-2</label>
+  <input type="text" name="company-name" value="Amazon" placeholder="company-2" id="copmany-name-2" required>
+ 
+  <label for="add">Address</label>
+  <input type="text" value="Delhi" name="position" placeholder="Address of company" id="durationc2" required>
+
+  <label for="duration">Duration</label>
+  <input type="text" value="1 year" name="position" placeholder="Duration in company" id="duratc2" required>
+ <!--company details ended  -->
+<!-- Qualification -->
+  <label for="position">Qualification....</label>
+  <label for="position">Class-10=></label>
+  <input type="text" value='school_name' name="position" placeholder="School Name" id="10school" required>
+  <input type="text"  value="Address" id="10address" required>
+  <input type="text"  value="percentage" id="10schoolpercent" required>
+  <!-- class 12 -->
+  <label for="position">Class-12=></label>
+  <input type="text" name="position" value="School Name" id="12school" required>
+  <input type="text" name="position" value="Address" id="12addr" required>
+  <input type="text" name="position" value="percentage" id="12schoolpercent" required>
+ <!-- ug -->
+  <label for="position">Graduation=></label>
+  <input type="text" name="position" value="College Name" id="ugschool" required>
+  <input type="text" name="position" value="Address" id="ugaddr" required>
+  <input type="text" name="position" value="percentage/cgpa" id="ugschoolpercent" required>
+  <input type="text" name="position" value="course=name with stream" id="ugstream" required>
+  <!-- <input type="text" name="position" placeholder="percentage/cgpa" id="ugschoolpercent" required> -->
+  <br>
+  <br>
+ 
+<!-- projects -->
+<label for="project"><u>Projects...</u></label>
+  <label for="project">project 1 :</label>
+  <input type="text" name="project-name" id="p1"  value="project name">
+  <!-- <label for="project">project name:</label> -->
+  <input type="url" name="project-name" id="p1" value="link.com" placeholder="project-link">
+  <label for="project">project 2: </label>
+  <input type="text" name="project-name" id="p2name" value="project name">
+  <!-- <label for="project">project name:</label> -->
+  <input type="url" name="project-name" id="p2name" value="project-link">
+<!-- skills you know -->
+  <br>
+  <br>
+<label for="skills"><b><u>SKILLS:</u></b> </label>
+<input type="text" name="project-name" id="tech1" value="technology-name">
+<input type="text" name="project-name" id="tech1" value="technology-name">
+<input type="text" name="project-name" id="tech1" value="technology-name">
+<input type="text" name="project-name" id="tech1" value="technology-name">
+<input type="text" name="project-name" id="tech1" value="technology-name">
+
+<!-- hobby/intrest -->
+<br>
+<br>
+  <label for="summary"><b><u>HOBBY:</u></b></label>
+  <textarea name="summary" id="summary" rows="5" cols="50"></textarea>
+
+  <!-- <label for="education">Education:</label>
+  <input type="text" name="education" id="education" required>
+
+  <label for="work_experience">Work Experience:</label>
+  <input type="text" name="work_experience" id="work_experience" required>
+   -->
+  <!-- <label for="skills">Skills:</label>
+  <textarea name="skills" id="skills" rows="5" cols="50"></textarea> -->
+    
+    <!-- <button onclick="download()" background-color="blue">Download</button> -->
+  <!-- <input type="submit" value="Download" onclick="pdf()"> -->
+
+</form>
+
+
+
+</div>
+
+</div>
+<script>
+  
+  function download(){
+    var element = document.getElementById('look');
+    html2pdf(element);
+  }
+  
+
+</script>
+
+</body>
+</html>

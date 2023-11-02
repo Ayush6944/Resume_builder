@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #0bb5f4;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #b1eaff;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<div class="resume">
+   <div class="resume_left">
+     <div class="resume_profile">
+       <img src="data:image/jpeg;base64,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" alt="profile_pic">
+     </div>
+     <div class="resume_content">
+       <div class="resume_item resume_info">
+         <div class="title">
+           <p class="bold">stephen colbert</p>
+           <p class="regular">Designer</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fas fa-map-signs"></i>
+             </div>
+             <div class="data">
+               21 Street, Texas <br /> USA
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fas fa-mobile-alt"></i>
+             </div>
+             <div class="data">
+               +324 4445678
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fas fa-envelope"></i>
+             </div>
+             <div class="data">
+               stephen@gmail.com
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fab fa-weebly"></i>
+             </div>
+             <div class="data">
+               www.stephen.com
+             </div>
+           </li>
+         </ul>
+       </div>
+       <div class="resume_item resume_skills">
+         <div class="title">
+           <p class="bold">skill's</p>
+         </div>
+         <ul>
+           <li>
+             <div class="skill_name">
+               HTML
+             </div>
+             <div class="skill_progress">
+               <span style="width: 80%;"></span>
+             </div>
+             <div class="skill_per">80%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               CSS
+             </div>
+             <div class="skill_progress">
+               <span style="width: 70%;"></span>
+             </div>
+             <div class="skill_per">70%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               SASS
+             </div>
+             <div class="skill_progress">
+               <span style="width: 90%;"></span>
+             </div>
+             <div class="skill_per">90%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               JS
+             </div>
+             <div class="skill_progress">
+               <span style="width: 60%;"></span>
+             </div>
+             <div class="skill_per">60%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               JQUERY
+             </div>
+             <div class="skill_progress">
+               <span style="width: 88%;"></span>
+             </div>
+             <div class="skill_per">88%</div>
+           </li>
+         </ul>
+       </div>
+       <div class="resume_item resume_social">
+         <div class="title">
+           <p class="bold">Social</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fab fa-facebook-square"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Facebook</p>
+               <p>Stephen@facebook</p>
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fab fa-twitter-square"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Twitter</p>
+               <p>Stephen@twitter</p>
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fab fa-youtube"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Youtube</p>
+               <p>Stephen@youtube</p>
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fab fa-linkedin"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Linkedin</p>
+               <p>Stephen@linkedin</p>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+  </div>
+  <div class="resume_right">
+    <div class="resume_item resume_about">
+        <div class="title">
+           <p class="bold">About us</p>
+         </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?</p>
+    </div>
+    <div class="resume_item resume_work">
+        <div class="title">
+           <p class="bold">Work Experience</p>
+         </div>
+        <ul>
+            <li>
+                <div class="date">2013 - 2015</div> 
+                <div class="info">
+                     <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2015 - 2017</div>
+              <div class="info">
+                     <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2017 - Present</div>
+              <div class="info">
+                     <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="resume_item resume_education">
+      <div class="title">
+           <p class="bold">Education</p>
+         </div>
+      <ul>
+            <li>
+                <div class="date">2010 - 2013</div> 
+                <div class="info">
+                     <p class="semi-bold">Web Designing (Texas University)</p> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2000 - 2010</div>
+              <div class="info">
+                     <p class="semi-bold">Texas International School</p> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="resume_item resume_hobby">
+      <div class="title">
+           <p class="bold">Hobby</p>
+         </div>
+       <ul>
+         <li><i class="fas fa-book"></i></li>
+         <li><i class="fas fa-gamepad"></i></li>
+         <li><i class="fas fa-music"></i></li>
+         <li><i class="fab fa-pagelines"></i></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
